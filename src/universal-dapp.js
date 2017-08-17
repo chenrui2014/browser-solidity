@@ -307,7 +307,7 @@ UniversalDApp.prototype.renderInstance = function (contract, address, contractNa
     $(instance).toggleClass(`${css.hidesub}`)
   }
 
-  var abi = txHelper.sortAbiFunction(contract)
+  var abi = txHelper.sortAbiFunction(contractabi)
 
   instance.appendChild(title)
 
