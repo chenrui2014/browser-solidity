@@ -555,6 +555,9 @@ function run () {
     fileProviderOf: (path) => {
       return fileManager.fileProviderOf(path)
     },
+    currentPath: function () {
+      return fileManager.currentPath()
+    },
     getBalance: (address, callback) => {
       udapp.getBalance(address, (error, balance) => {
         if (error) {
